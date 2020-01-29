@@ -375,6 +375,7 @@ ul.social-list li:nth-child(3) a:hover{
 .progress-bar{
     background: #f4c613;
     position: relative;
+    border-radius: 10px;
 }
 .progress-bar span{
     font-size: 11px;
