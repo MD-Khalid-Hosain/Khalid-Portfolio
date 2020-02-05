@@ -46,3 +46,24 @@ $(function(){
       animation: 'slide', // The panels will slide up and down
     });
   });
+/*==============
+    portfolio
+  ==============*/
+$(window).on('load', function(){
+//    initialize isotop
+    $("#isotope-container").isotope({
+        
+    });
+    // filter items on button click
+    $("#isotope-filter").on('click', 'button', function(){
+      // get filter value
+        var filterValue = $(this).attr('data-filter');
+        //filter portfolio items
+        $("#isotope-container").isotope({
+            filter:filterValue
+        });
+            // active button
+         $("#isotope-filter").find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+});

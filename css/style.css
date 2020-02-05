@@ -535,3 +535,43 @@ ul.social-list li:nth-child(3) a:hover{
   line-height: 20px;
   margin-bottom: 20px;
 }
+/*==============
+Portfolio section
+================*/
+#portfolio .vertical-heading{
+    margin-bottom: 50px;
+}
+#portfolio .content-box-md{
+    margin-bottom: -98px;
+}
+#isotope-filter{
+    margin-bottom: 0;
+}
+.row.no-gaps [class*=col-]{
+  padding: 0;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
