@@ -1,1 +1,1 @@
-http://developerkhalid.me/Khalid-Portfolio/
+#http://developerkhalid.me/Khalid-Portfolio/
