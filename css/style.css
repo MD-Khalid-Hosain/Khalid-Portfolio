@@ -542,36 +542,118 @@ Portfolio section
     margin-bottom: 50px;
 }
 #portfolio .content-box-md{
-    margin-bottom: -98px;
+    margin-bottom: -88px;
 }
 #isotope-filter{
     margin-bottom: 0;
 }
 .row.no-gaps [class*=col-]{
-  padding: 0;  
+  padding: 0;
+}
+.portfolio-item{
+  overflow: hidden;
+  position: relative;
+}
+/*Filter css*/
+#isotope-filter{
+    padding: 10px 15px 10px 0;
+}
+#isotope-filter button{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-right: 30px;
+  outline: 0
+}
+#isotope-filter button span{
+  display: block;
+  -webkit-transition: border-color .4s ease-in-out;
+  transition: border-color .4s ease-in-out;
+}
+#isotope-filter button.active span{
+  color: #f4c613;
+  border-bottom: 3px solid #f4c613;
 }
 
+/*zoom effect*/
 
+.portfolio-item img{
+  width: 100%;
+  height: auto;
+  -webkit-transition: transform .5s ease;
+  transition: transform .5s ease;
 
+}
+.portfolio-item:hover img{
+  -webkit-ransform: scale(1.1);
+  transform: scale(1.1);
+}
+/* portfolio over lay*/
+.portfolio-item-overlay{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 14, 17, 0.4);
+  -webkit-cursor: zoom-in;
+  cursor: zoom-in;
+  opacity: 0;
+  -webkit-ransition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* portfolio item details  */
+.portfolio-item-details{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.portfolio-item-details h3{
+  color: #f4c613;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-ransition: all 0.5s;
+  transition: all 0.5s;
 
+}
+.portfolio-item-details span{
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  height: 6px;
+  width: 30px;
+  margin: 11px auto 5px auto; //for stay in center
 
+}
+.portfolio-item-details p{
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
+  -webkit-ransition: all 0.5s;
+  transition: all 0.5s;
+}
+/*Show overlay on mouse hover*/
+.portfolio-item:hover .portfolio-item-details h3{
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.portfolio-item:hover .portfolio-item-details p{
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.portfolio-item:hover .portfolio-item-overlay{
+  opacity: 1;
+}

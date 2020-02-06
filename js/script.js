@@ -52,7 +52,7 @@ $(function(){
 $(window).on('load', function(){
 //    initialize isotop
     $("#isotope-container").isotope({
-        
+
     });
     // filter items on button click
     $("#isotope-filter").on('click', 'button', function(){
@@ -67,3 +67,15 @@ $(window).on('load', function(){
         $(this).addClass('active');
     });
 });
+/*==============
+    magnific popup
+  ==============*/
+  $(function(){
+    $("#portfolio-wrapper").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  });
