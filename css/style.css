@@ -59,6 +59,7 @@ section{
 #home{
     background: none;
     height: 100%;
+
 }
 #home-bg-img{
     background: url(../img/home/home_pic.jpg);
@@ -95,8 +96,7 @@ section{
 #home-heading h1{
     color: #fff;
     font-size: 65px;
-    font-weight: 100;
-    text-transform: uppercase;
+    font-weight: 400;
     margin: 0;
     display: inline-block
 }
@@ -538,6 +538,9 @@ ul.social-list li:nth-child(3) a:hover{
 /*==============
 Portfolio section
 ================*/
+#portfolio{
+  padding-bottom: 200px;
+}
 #portfolio .vertical-heading{
     margin-bottom: 50px;
 }
@@ -566,7 +569,7 @@ Portfolio section
   -webkit-box-shadow: none;
   box-shadow: none;
   padding-right: 30px;
-  outline: 0
+  outline: 0;
 }
 #isotope-filter button span{
   display: block;
@@ -656,4 +659,49 @@ Portfolio section
 }
 .portfolio-item:hover .portfolio-item-overlay{
   opacity: 1;
+}
+/*==============
+testimonials section
+================*/
+#testimonial{
+  background: #f4f4f4;
+  padding-bottom: 40px;
+  overflow: visible;
+}
+#testimonial .vertical-heading{
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+#testimonial-slider{
+  background: #f4c613;
+  top: -120px;
+}
+.testimonial{
+  padding: 20px 45px 0 45px;
+  line-height: 20px;
+}
+.testimonial h3{
+  font-size: 30px;
+  line-height: 30px;
+}
+.testimonial .stars{
+font-size: 20px;
+margin: 20px 0 10px 0;
+}
+.testimonial p{
+  line-height: normal;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.author .author-name-des{
+  width: 106px;
+  margin-top: 25px;
+  text-align: left;
+}
+.author .author-name-des p:nth-child(1){
+  font-weight: bold;
+}
+.author .author-name-des p{
+  margin: 0;
 }

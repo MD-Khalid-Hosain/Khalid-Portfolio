@@ -79,3 +79,29 @@ $(window).on('load', function(){
       }
     });
   });
+  /*==============
+      auto typed
+    ==============*/
+    $(function(){
+      var typed = new Typed('#typing', {
+    strings: ["Web Developer.", "Web Designer."],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000
+  });
+    });
+    /*==============
+      testiomial
+      ==============*/
+      $(function(){
+        $("#testimonial-slider").owlCarousel({
+          items: 1,
+          autoplay: true,
+          smartSpeed: 600,
+          loop: true,
+          autoplayHoverPause: true,
+          nav: true,
+          dots: false
+        });
+      });
